@@ -8,10 +8,11 @@ const shopifyProductsRouter = require('./API/shopifyProducts');
 const app = express();
 const port = process.env.PORT || 5432;
 app.use(cors({ origin: true }));
-// Middleware
-app.use(cors()); // Use cors middleware
-app.use(express.json());
 
+app.use(express.json());
+app.get("/",(req,res)=>{
+  res.json("HELLO");
+})
 // MongoDB connection
 mongoose.connect('mongodb+srv://db_user_read:LdmrVA5EDEv4z3Wr@cluster0.n10ox.mongodb.net/RQ_Analytics?retryWrites=true&w=majority', {
   useNewUrlParser: true,
