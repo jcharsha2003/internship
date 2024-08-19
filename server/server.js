@@ -6,7 +6,7 @@ const shopifyOrdersRouter = require('./API/shopifyOrders');
 const shopifyProductsRouter = require('./API/shopifyProducts');
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5432;
 
 // Middleware
 app.use(cors()); // Use cors middleware
