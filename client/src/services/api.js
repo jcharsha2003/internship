@@ -1,6 +1,6 @@
 // src/services/api.js
 
-const BASE_URL = 'http://localhost:5000/api'; // Adjust the base URL if needed
+const BASE_URL = 'https://internship-h1p7.onrender.com/api'; // Adjust the base URL if needed
 
 
 // Function to aggregate data
